@@ -25,11 +25,11 @@ TAGS_ON_MENU = True
 ARCHIVES_ON_MENU = False
 PROFILE_IMAGE = ''
 SHOW_ARTICLE_AUTHOR = False
-SITE_SUBTEXT = ''
+SITE_SUBTEXT = 'Random rants & thoughts'
 
 EMAIL_ADDRESS = 'alexandre.avanian@gmail.com'
 FB_ADDRESS = ''
-GITHUB_ADDRESS = 'github.com/aavanian'
+GITHUB_ADDRESS = 'https://www.github.com/aavanian'
 SO_ADDRESS = ''
 TWITTER_ADDRESS = '@aavanian'
 
@@ -37,12 +37,23 @@ DISQUS_SITENAME = ''
 GOOGLE_ANALYTICS_DOMAIN = ''
 GOOGLE_ANALYTICS_ID = ''
 
+NOTEBOOK_DIR = 'notebooks'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+# Plug-ins
+PLUGIN_PATHS = ['.']
+PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
+           'liquid_tags.youtube', 'liquid_tags.vimeo',
+           'liquid_tags.include_code', 'liquid_tags.notebook']
+
+# for notebook rendering
+#EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
