@@ -12,6 +12,31 @@ TIMEZONE = 'Asia/Hong_Kong'
 
 DEFAULT_LANG = 'en'
 
+THEME = 'alchemy'
+# Alchemy theme configuration
+EXTRA_FAVICON = ''
+LICENSE_NAME = ''
+LICENCE_URL = ''
+MENU_ITEMS = {}
+META_DESCRIPTION = ''
+PAGES_ON_MENU = True
+CATEGORIES_ON_MENU = True
+TAGS_ON_MENU = True
+ARCHIVES_ON_MENU = False
+PROFILE_IMAGE = ''
+SHOW_ARTICLE_AUTHOR = False
+SITE_SUBTEXT = ''
+
+EMAIL_ADDRESS = 'alexandre.avanian@gmail.com'
+FB_ADDRESS = ''
+GITHUB_ADDRESS = 'github.com/aavanian'
+SO_ADDRESS = ''
+TWITTER_ADDRESS = '@aavanian'
+
+DISQUS_SITENAME = ''
+GOOGLE_ANALYTICS_DOMAIN = ''
+GOOGLE_ANALYTICS_ID = ''
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
