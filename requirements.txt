@@ -1,6 +1,3 @@
 pelican
 Markdown
-fabric
-ipython
-nbconvert
-nbformat
+ipython[notebook]

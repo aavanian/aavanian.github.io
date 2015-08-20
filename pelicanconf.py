@@ -22,7 +22,8 @@ DEFAULT_LANG = 'en'
 DEFAULT_DATE = 'fs'
 DEFAULT_CATEGORY = 'misc'
 
-THEME = 'alchemy'
+THEME = 'themes/bootstrap3'
+
 # Alchemy theme configuration
 EXTRA_FAVICON = ''
 LICENSE_NAME = ''
@@ -58,7 +59,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Plug-ins
-PLUGIN_PATHS = ['.']
+PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
            'liquid_tags.youtube', 'liquid_tags.vimeo',
            'liquid_tags.include_code', 'liquid_tags.notebook']
@@ -85,4 +86,4 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
