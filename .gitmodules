@@ -1,21 +1,28 @@
 [submodule "themes/bootstrap3"]
 	path = themes/bootstrap3
 	url = https://github.com/DandyDev/pelican-bootstrap3.git
+	ignore = dirty
 [submodule "themes/pure"]
 	path = themes/pure
 	url = https://github.com/PurePelicanTheme/pure-single.git
+	ignore = dirty
 [submodule "themes/alchemy"]
 	path = themes/alchemy
 	url = https://github.com/nairobilug/pelican-alchemy.git
+	ignore = dirty
 [submodule "themes/mockingbird"]
 	path = themes/mockingbird
 	url = https://github.com/wrl/pelican-mockingbird.git
+	ignore = dirty
 [submodule "themes/simplegrey"]
 	path = themes/simplegrey
 	url = https://github.com/fle/pelican-simplegrey.git
+	ignore = dirty
 [submodule "themes/elegant"]
 	path = themes/elegant
 	url = https://github.com/talha131/pelican-elegant.git
+	ignore = dirty
 [submodule "pelican-plugins"]
 	path = pelican-plugins
 	url = https://github.com/aavanian/pelican-plugins.git
+	ignore = dirty
