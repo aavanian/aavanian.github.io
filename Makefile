@@ -84,7 +84,7 @@ publish:
 
 github: publish
 	ghp-import -b $(GITHUB_PAGES_BRANCH) -m "$(shell python write_next_commit_msg.py)" $(OUTPUTDIR)
-	#git push origin $(GITHUB_PAGES_BRANCH)
+	git push origin $(GITHUB_PAGES_BRANCH)
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
 .PHONY: html help clean regenerate serve serve-global devserver publish github
