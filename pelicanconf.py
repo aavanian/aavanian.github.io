@@ -58,6 +58,14 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico', '../.travis.yml', '../.gitmodules']
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    '../.travis.yml': {'path': '.travis.yml'},
+    '../.gitmodules': {'path': '.gitmodules'}
+}
+
 # Plug-ins
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
