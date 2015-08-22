@@ -1,7 +1,6 @@
 # @/dev/null blog
 
 ## To-Dos
-* Test xkcd plots
 * Investigate robots.txt file and build one.
 * Build a custom favicon (and others for most browsers)
 
