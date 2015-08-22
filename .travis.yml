@@ -10,11 +10,19 @@ install:
 - pip install --upgrade pip
 - pip install -r requirements.txt
 script:
-- make github
+- make publish
 notifications:
   email:
     on_success: always
     on_failure: always
 env:
   global:
-  - secure: wWxeUfqfkVWPjtmJjVZftAqgzmQgUeFxi9qIOR7/bRHdnKxQ6RRHzXD65VTHc+CJImvBG0agRENhCcSX7e+MDMpvwTmqxDNE2mU/Y3rs8/ajXRSM/0Nijt3zb76WJdatCCA3gloN7HOSkzj55h/TfblOJkga3KhciU1wmRPr4PdQzWt1zl5ypHxVadGIdNSJ4s4//4S4nhwa07w30jtXQ+p55tCDW3+QowaKMq1YO5XiY4Wl/8kc4es4YonHN89gARmNW3uZ2WVZetwX5Q1sY9d+Gw97tNzfGIIqjUhr6hRSH9HB32up9oa0/rWOF9Dy5NQJkxufprhSTaTQ9XcniL1fBe3l5AlsqJBV6P51wNWsW/I5cEm++paxyr9aogJ0gCVy6VJjTUfmtTNe3/h64Ua+THPutfILvOFy7W8XZIOSvOncQXiD1WLBaWERkVAVqGPSprFUXKhCZoAYEzo9nJPBeGTzWEIAkrTYvkDh2Ciu7dN9zSp+4jL04z6wZ+5DfRDCDnBzbOIC+FwaFevumr9JFDMISCerrXJXF2NGjaD8CcdR53qHTlPsPnEHkm3zAd+j5lQKpg61Fz+pPk1xgviPMY5mpiL2tbha5eagyZP0QYlDXuPb9xFdU5cNN9z7ZDSueiWWI/iW3QayfornsHuK+jyAhnkEyTF4WT9qcFI=
+    - GIT_NAME="Alexandre Avanian"
+    - GIT_EMAIL="alexandre.avanian@gmail.com"
+    - GITHUB_PAGES_BRANCH="master"
+    - GITHUB_PAGES_ORIGIN="source"
+    - TARGET_REPO=aavanian/aavanian.github.io
+    - OUTPUTDIR=output
+    - secure: wWxeUfqfkVWPjtmJjVZftAqgzmQgUeFxi9qIOR7/bRHdnKxQ6RRHzXD65VTHc+CJImvBG0agRENhCcSX7e+MDMpvwTmqxDNE2mU/Y3rs8/ajXRSM/0Nijt3zb76WJdatCCA3gloN7HOSkzj55h/TfblOJkga3KhciU1wmRPr4PdQzWt1zl5ypHxVadGIdNSJ4s4//4S4nhwa07w30jtXQ+p55tCDW3+QowaKMq1YO5XiY4Wl/8kc4es4YonHN89gARmNW3uZ2WVZetwX5Q1sY9d+Gw97tNzfGIIqjUhr6hRSH9HB32up9oa0/rWOF9Dy5NQJkxufprhSTaTQ9XcniL1fBe3l5AlsqJBV6P51wNWsW/I5cEm++paxyr9aogJ0gCVy6VJjTUfmtTNe3/h64Ua+THPutfILvOFy7W8XZIOSvOncQXiD1WLBaWERkVAVqGPSprFUXKhCZoAYEzo9nJPBeGTzWEIAkrTYvkDh2Ciu7dN9zSp+4jL04z6wZ+5DfRDCDnBzbOIC+FwaFevumr9JFDMISCerrXJXF2NGjaD8CcdR53qHTlPsPnEHkm3zAd+j5lQKpg61Fz+pPk1xgviPMY5mpiL2tbha5eagyZP0QYlDXuPb9xFdU5cNN9z7ZDSueiWWI/iW3QayfornsHuK+jyAhnkEyTF4WT9qcFI=
+after_success:
+  - bash deploy.sh

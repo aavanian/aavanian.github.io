@@ -1,36 +1,9 @@
 # @/dev/null blog
 
 ## To-Dos
-* ~~clean-up master branch since source has been created~~
-  * ~~update README.md~~
-  * ~~remove everything but README.md, .travis.yml and .gitmodules and move output dir up one level~~
-  * ~~submodules stay in place~~
-* ~~Automatize commit messages from pelican builds~~
-* design and test make publish
-  * ~~synchronize confs~~
-  * set-up ghp-import
-    * process should be:
-      * `bash test-git-status.sh` (not really needed as we do not commit on `source` branch)
-      * `make github`
-      * ~~commit in current? (would prefer not)~~
-      * `ghp-import -b $(GITHUB_PAGES_BRANCH) -m $(shell python write_next_commit_msg.py) $(OUTPUTDIR) `
-      * `[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)`
-      * `bash test-git-status.sh` <- optional after the process is confirmed
-    * ~~dependancy for travis~~
-  * perform proper commits and rebase on all branches
-  * ~~design the .travis.yml process (particularly the pre-build status check)~~
-  * recheck and test the push function
-  * once it works, delete current aavanian.github.io and rename -source
+* Test xkcd plots
 * Investigate robots.txt file and build one.
 * Build a custom favicon (and others for most browsers)
-* ~~Add favicon.ico and robots.txt to the content/extra folder and add the following to pelicanconf.py:~~
-```python
-STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico']
-EXTRA_PATH_METADATA = {
-    'extra/robots.txt': {'path': 'robots.txt'},
-    'extra/favicon.ico': {'path': 'favicon.ico'}
-    }
-```
 
 ## Known issues
 * Liquid_Tags header for notebook
