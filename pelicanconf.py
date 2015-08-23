@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 import os
 
 # Site generation behavior
-LOAD_CONTENT_CACHE = False
-RELATIVE_URLS = True
+LOAD_CONTENT_CACHE = True
+RELATIVE_URLS = False
 DELETE_OUTPUT_DIRECTORY = True
 
 # Site configuration
@@ -49,7 +49,7 @@ else:
 
 # Theme
 THEME = 'themes/bootstrap3'
-BOOTSTRAP_THEME = 'Spacelab' # Yeti is also a good candidate
+BOOTSTRAP_THEME = 'spacelab' # Yeti is also a good candidate
 PYGMENTS_STYLE = 'tango'
 CUSTOM_CSS = 'theme/css/custom.css'
 
