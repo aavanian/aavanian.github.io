@@ -3,6 +3,7 @@
 ## To-Dos
 * Investigate robots.txt file and build one.
 * Build a custom favicon (and others for most browsers)
+* investigate and install tag_clouds and tiptue search
 
 ## Known issues
 * Liquid_Tags header for notebook
