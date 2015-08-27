@@ -15,13 +15,17 @@ SITE_SUBTEXT = 'Random rants & thoughts'
 SITEURL = 'http://aavanian.github.io'
 
 PATH = 'content'
-STATIC_PATHS = ['images', 'extra/custom.css', 'extra/robots.txt', 'extra/favicon.ico', '../.travis.yml', '../.gitmodules']
+STATIC_PATHS = ['images', 'extra/custom.css', 'extra/robots.txt',
+                'extra/favicon.ico', '../.travis.yml', '../.gitmodules',
+                'extra/google53d883a713a8efd5.html'
+                ]
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     '../.travis.yml': {'path': '.travis.yml'},
     '../.gitmodules': {'path': '.gitmodules'},
-    'extra/custom.css': {'path': 'theme/css/custom.css'}
+    'extra/custom.css': {'path': 'theme/css/custom.css'},
+    'extra/google53d883a713a8efd5.html': {'path': 'google53d883a713a8efd5.html'}
 }
 
 DEFAULT_LANG = 'en'
@@ -45,11 +49,11 @@ if not os.path.exists('_nb_header.html'):
     warnings.warn("_nb_header.html not found.  "
                   "Rerun make html to finalize build.")
 else:
-    EXTRA_HEADER = open('_nb_header.html', encoding = 'utf-8').read()
+    EXTRA_HEADER = open('_nb_header.html', encoding='utf-8').read()
 
 # Theme
 THEME = 'themes/bootstrap3'
-BOOTSTRAP_THEME = 'spacelab' # Yeti is also a good candidate
+BOOTSTRAP_THEME = 'spacelab'  # Yeti is also a good candidate
 PYGMENTS_STYLE = 'tango'
 CUSTOM_CSS = 'theme/css/custom.css'
 
@@ -82,10 +86,10 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 
 # Social widget
 TWITTER_USERNAME = 'aavanian'
-SOCIAL =   (('twitter', 'http://twitter.com/aavanian'),
-            ('linkedin', 'http://www.linkedin.com/in/alexandreavanian'),
-            ('github', 'http://github.com/aavanian'),
-            ('stackoverflow', 'http://stackoverflow.com/users/5190136/alexandre-avanian', 'stack-overflow'))
+SOCIAL = (('twitter', 'http://twitter.com/aavanian'),
+          ('linkedin', 'http://www.linkedin.com/in/alexandreavanian'),
+          ('github', 'http://github.com/aavanian'),
+          ('stackoverflow', 'http://stackoverflow.com/users/5190136/alexandre-avanian', 'stack-overflow'))
 SHARIFF = True
 SHARIFF_BACKEND_URL = ''
 SHARIFF_LANG = 'en'
@@ -93,10 +97,10 @@ SHARIFF_SERVICES = "[&quot;twitter&quot;linkedin&quot;googleplus&quot;mail&quot;
 
 DISQUS_SITENAME = ''
 GOOGLE_ANALYTICS = ''
-GOOGLE_ANALYTICS_DOMAIN = ''
+GOOGLE_ANALYTICS_DOMAIN = 'UA-66686111-1'
 GOOGLE_ANALYTICS_UNIVERSAL = ''
 GOOGLE_ANALYTICS_UNIVERSAL_PROPERTY = ''
-GOOGLE_ANALYTICS_ID = ''
+GOOGLE_ANALYTICS_ID = 'UA-66686111-1'
 
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
 SHOW_ARTICLE_AUTHOR = False
